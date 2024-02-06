@@ -198,6 +198,7 @@ export default function HelpCart() {
               onChange={handleInputChange}
             />
             <br />
+            <br />
 
             <label>Name: </label>
             <input
@@ -206,6 +207,7 @@ export default function HelpCart() {
               value={newUser.name}
               onChange={handleInputChange}
             />
+            <br />
             <br />
 
             <label>Last Name: </label>
@@ -216,6 +218,7 @@ export default function HelpCart() {
               onChange={handleInputChange}
             />
             <br />
+            <br />
 
             <label>Phone: </label>
             <input
@@ -225,6 +228,7 @@ export default function HelpCart() {
               onChange={handleInputChange}
             />
             <br />
+            <br />
 
             <label>Text: </label>
             <input
@@ -233,6 +237,8 @@ export default function HelpCart() {
               value={newUser.text}
               onChange={handleInputChange}
             />
+            <br />
+            <br />
             <br />
 
             <button onClick={handleAddUser}>Add User</button>
