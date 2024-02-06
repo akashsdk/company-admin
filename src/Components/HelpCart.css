@@ -1,0 +1,45 @@
+.HelpCart-Body{
+    height: auto;
+    width: 100%;
+}
+.HelpCart-TopBox{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.HelpCart-Div{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.HelpCart-Box{
+    height: calc(100vh - 150px);
+    width: 95%;
+    overflow: auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-bottom: 20px;
+}
+
+.HelpCart-Box-Div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+.HelpCart-Box-Line{
+    height: 1.5px;
+    width: 95%;
+    margin-right: 30px;
+    background-color: aqua;
+    margin-top: 20px;
+}
