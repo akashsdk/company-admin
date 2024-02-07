@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./HelpCart.css";
-import { Button, Modal } from "antd";
+import { Button } from "antd";
 import { EditOutlined, DiffOutlined } from "@ant-design/icons";
 
 import { db } from "../firebaseConfig";
