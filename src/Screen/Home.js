@@ -10,7 +10,7 @@ import FeedBack from "../Components/FeedBack";
 import HelpCart from "../Components/HelpCart";
 
 export default function Home() {
-  const [page, setPage] = useState(5);
+  const [page, setPage] = useState(1);
 
   const [messageApi, contextHolder] = message.useMessage();
   const success = () => {
