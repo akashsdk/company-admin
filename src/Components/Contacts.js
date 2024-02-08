@@ -127,7 +127,7 @@ export default function Contacts() {
         >
           Read
         </Button>
-        <h1>HelpCart</h1>
+        <h1>Contacts</h1>
         <Button
           type="primary"
           size="large"
