@@ -8,6 +8,7 @@ import CheckOut from "../Components/CheckOut";
 import Contacts from "../Components/Contacts";
 import FeedBack from "../Components/FeedBack";
 import HelpCart from "../Components/HelpCart";
+import NewTry from "../Components/NewTry";
 
 export default function Home() {
   const [page, setPage] = useState(1);
@@ -16,11 +17,11 @@ export default function Home() {
   const success = () => {
     messageApi
       .open({
-        type: 'loading',
-        content: 'Action in progress..',
+        type: "loading",
+        content: "Action in progress..",
         duration: 1.5,
       })
-      .then(() => message.success('Loading finished', 2.5))
+      .then(() => message.success("Loading finished", 2.5));
   };
 
   return (
@@ -92,6 +93,19 @@ export default function Home() {
         >
           HelpCart
         </Button>
+
+        <Button
+          style={{ marginTop: "20px" }}
+          onClick={() => {
+            setPage(6);
+            success();
+          }}
+          size="large"
+          type={page === 6 ? "primary" : "default"}
+          danger
+        >
+          NewTry
+        </Button>
       </div>
       <div className="home-Right-Side">
         {page === 1 ? (
@@ -104,6 +118,8 @@ export default function Home() {
           <FeedBack></FeedBack>
         ) : page === 5 ? (
           <HelpCart></HelpCart>
+        ) : page === 6 ? (
+          <NewTry></NewTry>
         ) : (
           <h1> Error page</h1>
         )}
